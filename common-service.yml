@@ -1,0 +1,16 @@
+message:
+  prefix: My little logger
+server:
+  port: ${port:8081}
+
+logging:
+  level:
+    ROOT: WARN
+    org.apache.http: WARN
+    # turn up to DEBUG to diagnose GitHub API issues
+    org.apache.http.headers: WARN
+    # always log high-level information about application startup
+    org.gonzalad: INFO
+    # log generated password for admin endpoints, e.g. /env, /beans
+    # See http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#production-ready-endpoints
+    org.springframework.boot.autoconfigure.security.AuthenticationManagerConfiguration: INFO

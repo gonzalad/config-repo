@@ -1,0 +1,4 @@
+message:
+  greeting: Greetings mister !
+server:
+  port: 8080
