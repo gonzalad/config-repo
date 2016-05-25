@@ -2,3 +2,4 @@ message:
   greeting: Greetings mister !
 server:
   port: 8080
+loggerServiceUrl: http://localhost:8081
